@@ -1,0 +1,289 @@
+/*main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+}*/
+
+#Bienvenidos-Encabezado{
+  margin: auto;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  color: white;
+  background-repeat: no-repeat;
+  background-image: url(/assets/FLAMIN.jpg);
+  background-attachment: fixed;
+  background-size: cover;             
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 0%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+#Bienvenidos{
+  /*background: linear-gradient(to top, black, var(--rojo-principal));
+  background-image: url(../assets/Fondo-oriental-rojo.png);
+  background-attachment: fixed;
+  background-size: cover;             
+  background-position: center;*/
+
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 var(--negro-principal), -2px -2px 0 var(--negro-principal), 2px -2px 0 var(--negro-principal), -2px 2px 0 var(--negro-principal);
+  
+
+}
+#Bienvenidos img{
+  max-width: 60%;
+}
+
+/*Estilos de #Bienvenidos de dispositivos moviles */
+@media screen and (max-width: 768px) {
+  #Bienvenidos img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  #Bienvenidos {
+    height: 50vh;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+  }
+
+ 
+
+}
+
+
+
+#que-es img{
+  width: 70vh;
+  height: 70vh;
+  
+}
+
+#que-es {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+
+#que-es h2{
+  font-size: 3rem;
+}
+
+#que-es spam{
+  font-size: 1.5rem;
+}
+
+#que-es-una-boru{
+  margin-top: 100px;
+  width: 30%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  #que-es {
+    flex-direction: column;
+  }
+
+   #que-es img{
+  width: 50vh;
+  height: 50vh;
+  
+  }
+
+  #que-es-una-boru{
+    width: 90%;
+    margin-top: 0px;
+  }
+
+
+  
+}
+
+#Entrada-Expertos {
+  color: var(--negro-principal);
+  
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), var(--rojo-principal));
+  height: 100px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#Entrada-Expertos h2{
+  box-shadow: 1px 1px 1px 1px var(--negro-principal);
+}
+
+#EXPERTOS-EN-SABOR {
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+  padding: 10PX;
+  align-items: center;
+  justify-content: center;
+}
+
+#EXPERTOS-EN-SABOR img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  border: 5px solid black;
+
+}
+
+
+
+#UBICACION{
+  padding: 10px;
+  display: flex;
+  height: 600px;
+  width: 100%;
+  background: linear-gradient(to bottom, black, var(--rojo-principal)); 
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+}
+
+#UBICACION-texto img{
+  width: 500px;
+  height: 500px;
+}
+
+#UBICACION iframe{
+  
+  width: 100%;      /* ocupa todo el ancho del contenedor */
+  width: 400px; /* opcional: ancho máximo */
+  height: 400px;    /* altura fija o variable */
+ 
+}
+
+#UBICACION-mapa{
+  padding-bottom: 10px;
+  
+}
+
+#UBICACION-footer {
+  white-space: pre;
+  background-color: var(--negro-principal);
+  color: #fff;
+  overflow: hidden;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;   
+  bottom: 0;            
+  left: 0;
+  width: 100%;
+  
+}
+
+#UBICACION-footer #banda{
+  animation: banda;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes banda {
+  from{
+    transform: translateX(50%);
+
+  }
+  to {
+    transform: translateX(-100%);
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #UBICACION {
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #UBICACION-mapa{
+    padding-bottom: 20px;
+  }
+  
+
+
+}
+
+#enlaces {
+  
+  width: 100%;
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+#enlaces-vinculos ul{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0 auto;
+
+  
+}
+#enlaces-imagen img{
+    margin-right: auto;
+    height: 55%;
+    width: 55%;
+    opacity: 40%;
+}
+
+
+@media screen and (max-width: 768px){
+  #enlaces {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #enlaces-vinculos ul{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  justify-content: center;
+  }
+ 
+  
+
+  #enlaces-imagen img{
+    margin-right: 0;     /* 🔴 MUY IMPORTANTE */
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+}
+
+
+

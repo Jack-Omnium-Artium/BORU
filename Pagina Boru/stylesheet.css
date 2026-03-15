@@ -1,0 +1,62 @@
+html, body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;   /* (opcional) quita márgenes por defecto */
+  padding: 0;  /* (opcional) quita paddings por defecto */
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width: 768px) {
+  html, body{
+
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+/*body {
+  background-image: url(../assets/Fondo-bolas-palillos.png);
+  background-attachment: fixed;
+  background-size:contain;
+  background-position: center;
+}*/
+
+
+
+h1{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
