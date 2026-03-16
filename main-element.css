@@ -103,6 +103,14 @@
 
   #que-es {
     flex-direction: column;
+    
+  }
+  #que-es h2{
+  font-size: 2.5rem;
+  }
+
+  #que-es spam{
+  font-size: 1.5rem;
   }
 
    #que-es img{
@@ -169,10 +177,18 @@
 
 }
 
-#UBICACION-texto img{
-  width: 500px;
-  height: 500px;
+#UBICACION-imgDE img{
+  padding: 5px;
+  width: 100%;
+  height: auto;
 }
+#UBICACION-texto{
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: rgb(138, 142, 136);
+  
+  }
 
 #UBICACION iframe{
   
@@ -227,10 +243,26 @@
     flex-direction: column;
     overflow: hidden;
   }
+
+  #UBICACION-imgDE img{
+  width: 80%;
+  height: auto;
+  }
+
+  #UBICACION-texto{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
   #UBICACION-mapa{
     padding-bottom: 20px;
   }
+  #UBICACION iframe{
   
+  width: 40vh;
+  height: 40vh;    
+  
+ 
+}
 
 
 }
@@ -247,7 +279,7 @@
 #enlaces-vinculos ul{
   font-size: 1.5rem;
   line-height: 1.6;
-  margin: 0 auto;
+  margin-right: 200px;
 
   
 }
@@ -261,26 +293,35 @@
 
 @media screen and (max-width: 768px){
   #enlaces {
-    
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
  
   #enlaces-vinculos ul{
+
+  margin: 0;
   font-size: 1.5rem;
   line-height: 1.6;
-  justify-content: center;
+  justify-content: space-between;
   }
  
-  
+  #enlaces-imagen{
+    display: flex;
+    justify-content: center;
+  }
 
   #enlaces-imagen img{
-    margin-right: 0;     /* 🔴 MUY IMPORTANTE */
-    margin-left: 0;
-    margin-bottom: 10px;
-    width: 80%;
-    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .40;
+    
 }
 
 }

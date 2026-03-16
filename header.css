@@ -1,5 +1,4 @@
 header{
-    
     display: flex;
     height: 15vh;
     width: 100%;
@@ -19,6 +18,7 @@ header{
     box-shadow: 0px 0px 10px 2px var(--gris);
 }
 
+
 header img{
   
   height: 15vh;
@@ -28,6 +28,7 @@ header img{
 }
 
 nav ul {
+  margin: 0;
   font-size: 1.5rem;
   list-style: none;   /* Quita las viñetas */
   margin: 0;          /* Quita márgenes por defecto */
@@ -41,21 +42,51 @@ nav ul {
 
 
 
-.navbar {
+/*.navbar {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: linear-gradient(to bottom, rgb(0, 0, 0), var(--rojo-principal));
   transition: top 0.3s ease;
-}
+}*/
 
 a {
+  display: flex;
   text-decoration: none; /* quita el subrayado */
   color: inherit;        /* usa el mismo color del texto padre */
   cursor: pointer;       /* asegura el cursor de "mano" */
+  justify-content: center;
+  align-items: center;
 }
 
 
+@media screen and (max-width: 768px) {
+  header {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    
+    }
 
+  header img{
+    display: block;
+    max-width: 200px;
+
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
+    padding:0;
+    margin: 0;
+    gap: 40px;
+    font-size: 1.5rem;
+
+  }
+}
 
 
 
